@@ -1,16 +1,21 @@
-x = 1
-y = 2
-def car1(x,y):
-    print("hiiiiii")
-    pass
-def car2(x,y):
-    print("fiiiiii")
-    pass
-def car3(x,y):
-    print("siiiiii")
-    pass
+import pygame
+from pygame.draw import *
 
+pygame.init()
 
-car1(1, 2)
-car2(x, y)
-car3(x, y)
+FPS = 30
+screen = pygame.display.set_mode((400, 400))
+
+# Здесь мы будем рисовать
+
+pygame.display.update()
+clock = pygame.time.Clock()
+finished = False
+
+while not finished:
+    clock.tick(FPS)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            finished = True
+
+pygame.quit()

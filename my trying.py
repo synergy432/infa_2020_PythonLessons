@@ -1,13 +1,13 @@
 x = 1
 y = 2
 def car1(x,y):
-    print("hiiiiii")
+    print("1")
     pass
 def car2(x,y):
-    print("fiiiiii")
+    print("2")
     pass
 def car3(x,y):
-    print("siiiiii")
+    print("3")
     pass
 
 
